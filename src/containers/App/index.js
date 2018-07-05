@@ -1,8 +1,12 @@
 import React from 'react';
+import Forecast from '../Forecast';
 
 const App = () => {
   return (
-    <div>Welcome to WeatherTV</div>
+    <div>
+      <h1>Welcome to WeatherTV</h1>
+      <Forecast/>
+    </div>
   );
 };
 
