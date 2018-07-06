@@ -4,7 +4,7 @@ A fictional cable weather channel web app that I thought about one night while f
 ![](./docs/weather-mock.png)
 
 ## Technologies used:
-* React 16
+* [React 16](https://reactjs.org/docs/getting-started.html)
 * [Redux](https://redux.js.org/)
 * [Sass](https://sass-lang.com/)
 * [Webpack 4](https://webpack.js.org/concepts/)
