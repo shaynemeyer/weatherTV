@@ -26,6 +26,15 @@ module.exports = {
             loader: "sass-loader" // compiles Sass to CSS
           }
         ]
+      },
+      {
+        test: /\.(ttf|eot|woff|woff2)$/,
+        use: {
+          loader: "file-loader",
+          options: {
+            name: "assets/fonts/[name].[ext]",
+          }
+        }
       }
     ]
   },

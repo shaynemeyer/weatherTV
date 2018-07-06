@@ -25,6 +25,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
     "node-sass": "^4.9.0",
     "react-hot-loader": "^4.3.3",
     "sass-loader": "^7.0.3",
@@ -36,6 +37,7 @@
   "dependencies": {
     "dotenv": "^6.0.0",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "weather-icons-sass": "^2.0.10"
   }
 }

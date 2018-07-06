@@ -1,0 +1,21 @@
+@import "../../styles/variables";
+
+#header {
+
+  color: $color-white;
+  font-size: 2rem;
+  background-color: rgba($color-black, 0.4);
+  margin: 1.2rem;
+  padding: .5rem;
+
+  > span {
+    padding-right:1.2rem;
+  }
+  .header__city {
+
+  }
+
+  .header__currentTime {
+
+  }
+}

@@ -1,0 +1,45 @@
+@import "../../styles/variables";
+
+
+#forecast-wrapper {
+  background-color: rgba($color-black, 0.4);
+  padding: 1rem .5rem;
+  color: $color-white;
+  font-size: 2rem;
+
+  .forecast__title {
+    font-size: 3rem;
+    padding: .2rem 1rem;
+  }
+
+  .forecast-row {
+    display: flex;
+  }
+
+  .forecast__item {
+    color: $color-white;
+    margin: 0 .5rem;
+    padding: .25rem;
+    background-color: rgba($color-black, 0.4);
+    display:flex;
+    flex-direction: column;
+    width: 8rem;
+    align-items: center;
+    align-content: center;
+
+    .forecast__item-day {
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .forecast__item-low {
+      font-size: 1.3rem;
+    }
+
+    .forecast__item-description {
+      font-size: 1.3rem;
+    }
+
+
+  }
+}

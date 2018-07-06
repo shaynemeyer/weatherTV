@@ -1,10 +1,13 @@
 import React from 'react';
 import Forecast from '../Forecast';
+import Header from '../../components/Header';
+import "../../styles/main.scss";
+import "./app.scss";
 
 const App = () => {
   return (
-    <div>
-      <h1>Welcome to WeatherTV</h1>
+    <div className="content">
+      <Header />
       <Forecast/>
     </div>
   );
