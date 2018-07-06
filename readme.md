@@ -6,6 +6,7 @@ A fictional cable weather channel web app that I thought about one night while f
 ## Technologies used:
 * React 16
 * [Redux](https://redux.js.org/)
+* [Sass](https://sass-lang.com/)
 * [Webpack 4](https://webpack.js.org/concepts/)
 * [Openweather api](https://openweathermap.org/forecast5)
 * [Weather Icons](https://erikflowers.github.io/weather-icons/)
