@@ -8,5 +8,5 @@ A fictional cable weather channel web app that I thought about one night while f
 * [Redux](https://redux.js.org/)
 * [Sass](https://sass-lang.com/)
 * [Webpack 4](https://webpack.js.org/concepts/)
-* [Openweather api](https://openweathermap.org/forecast5)
+* [Weather Bit api](https://www.weatherbit.io/)
 * [Weather Icons](https://erikflowers.github.io/weather-icons/)
