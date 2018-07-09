@@ -36,8 +36,7 @@ export default class App extends Component {
       dispatch,
     } = this.props;
 
-    // Everett is id=4936008
-    dispatch(fetchForecast({ zipcode: 98258 }))
+    dispatch(fetchForecast({ city: 'Everett', days: 5 }))
   }
 
 

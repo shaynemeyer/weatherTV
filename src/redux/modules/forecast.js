@@ -15,16 +15,16 @@ export default handleActions({
   ERROR_FORECAST: createErrorReducer(),
 }, {});
 
-export function fetchForecast({ zipcode } = {}) {
+export function fetchForecast({ city, days = 5 } = {}) {
   return async (dispatch) => {
     dispatch(requestForecast());
 
-    if (!zipcode) {
+    if (!city) {
       dispatch(errorForecast());
-      throw new Error('Missing zipcode');
+      throw new Error('Missing city');
     }
 
-    const url = `${globalsFetch().OPEN_WEATHER_BASE_URL}forecast?zip=${zipcode}`;
+    const url = `${globalsFetch().WEATHER_BIT_BASE_URL}daily?city=${city}&country=US&state=Washington&days=${days}`;
 
     try {
       const data = await fetchAPI(url);

@@ -4,7 +4,7 @@ import { globalsFetch } from "./globals";
 
 const {
   REQUEST_TIMEOUT_MS,
-  OPEN_WEATHER_API_KEY,
+  WEATHER_BIT_API_KEY,
 } = globalsFetch();
 
 const apiAxios = axios.create({
@@ -42,7 +42,7 @@ export function receiveReducer(state, { payload } = {}) {
 export async function fetchAPI(url, options = {}) {
 
   const response = await  apiAxios(
-    `//${url}&units=imperial&APPID=${OPEN_WEATHER_API_KEY}`,
+    `${url}&units=I&key=${WEATHER_BIT_API_KEY}`,
     options,
   );
 
