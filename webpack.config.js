@@ -2,6 +2,7 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: [
+    "babel-regenerator-runtime",
     "react-hot-loader/patch",
     "./src/index.js"
   ],

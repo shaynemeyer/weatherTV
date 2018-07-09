@@ -10,12 +10,18 @@
 
   > span {
     padding-right:1.2rem;
-  }
-  .header__city {
+    .header__city {
 
+    }
+
+    .header__currentTime {
+      p {
+        .clock {
+          display: inline-block;
+        }
+      }
+    }
   }
 
-  .header__currentTime {
-
-  }
 }
+
