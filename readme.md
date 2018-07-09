@@ -10,3 +10,8 @@ A fictional cable weather channel web app that I thought about one night while f
 * [Webpack 4](https://webpack.js.org/concepts/)
 * [Weather Bit api](https://www.weatherbit.io/)
 * [Weather Icons](https://erikflowers.github.io/weather-icons/)
+
+## Challenges 
+* Open Weather data is a little more work to get what I wanted so I switched to Weather Bit, which actually has Swagger docs so you can test different calls from within swagger. Also able to set the number of days to 5 which is exactly what I wanted.
+
+ 
