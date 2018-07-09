@@ -2,16 +2,22 @@ import React from 'react';
 import ForecastItem from './ForecastItem';
 import './forecast.scss';
 
-const Forecast = () => {
+const Forecast = (props) => {
 
   const renderItems = () => {
+    const {list=[]} = props;
+
+    const newList = list.slice(0, 5);
+
+    const listItems = newList.map((item) => {
+      const { weather: { description, icon, id, main} = []} = item;
+      const { main: { temp_max, temp_min} = {}} = item;
+      return <ForecastItem description={description} hi={temp_max} low={temp_min} day="Tue" key={id}/>
+    });
+
     return (
       <div className="forecast-row">
-        <ForecastItem description="Showers" hi="73" low="58" day="Tue"/>
-        <ForecastItem description="Showers" hi="73" low="58" day="Tue"/>
-        <ForecastItem description="Showers" hi="73" low="58" day="Tue"/>
-        <ForecastItem description="Showers" hi="73" low="58" day="Tue"/>
-        <ForecastItem description="Showers" hi="73" low="58" day="Tue"/>
+        {listItems}
       </div>
     );
   };
