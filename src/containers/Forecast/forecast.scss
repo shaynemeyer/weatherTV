@@ -3,17 +3,20 @@
 
 #forecast-wrapper {
   background-color: rgba($color-black, 0.4);
-  padding: 1rem .5rem;
+  padding: 0.5rem 0.5rem;
   color: $color-white;
   font-size: 2rem;
+  align-content: center;
 
   .forecast__title {
     font-size: 3rem;
     padding: .2rem 1rem;
+    margin: .2rem .5rem;
   }
 
   .forecast-row {
     display: flex;
+    justify-content: center;
   }
 
   .forecast__item {
@@ -27,9 +30,18 @@
     align-items: center;
     align-content: center;
 
+    & > div {
+      padding: 0.3rem 0;
+    }
+
     .forecast__item-day {
       text-transform: uppercase;
       font-weight: 700;
+    }
+
+    .forecast__item-icon i{
+      font-size: 3rem;
+      color: rgba($color-white, 0.75);
     }
 
     .forecast__item-low {

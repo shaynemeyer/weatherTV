@@ -45,7 +45,10 @@ export default class App extends Component {
 
     return (
       <div className="content">
-        <Header city={city_name} />
+        <div className="header__wrapper">
+          <Header city={city_name} />
+        </div>
+
         <Forecast data={data} />
       </div>
     );
