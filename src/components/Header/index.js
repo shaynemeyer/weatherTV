@@ -3,13 +3,12 @@ import Clock from '../Clock';
 
 import './header.scss';
 
-const Header = (props) => {
-  const {city:{name}={}} = props;
+const Header = ({ city }) => {
 
   return (
     <div id="header">
       <span>WeatherTV</span>
-      <span className="header__city">{name}</span>
+      <span className="header__city">{city}</span>
       <span className="header__currentTime"><Clock/></span>
     </div>
   )

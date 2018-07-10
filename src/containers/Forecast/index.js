@@ -5,14 +5,11 @@ import './forecast.scss';
 const Forecast = (props) => {
 
   const renderItems = () => {
-    const {list=[]} = props;
+    const {data=[]} = props;
 
-    const newList = list.slice(0, 5);
-
-    const listItems = newList.map((item) => {
-      const { weather: { description, icon, id, main} = []} = item;
-      const { main: { temp_max, temp_min} = {}} = item;
-      return <ForecastItem description={description} hi={temp_max} low={temp_min} day="Tue" key={id}/>
+    const listItems = data.map((item) => {
+      const { max_temp, min_temp, valid_date, weather: {code = 0, description = ""} = []} = item;
+      return <ForecastItem description={description} hi={max_temp} low={min_temp} code={code} date={valid_date} key={valid_date}/>
     });
 
     return (

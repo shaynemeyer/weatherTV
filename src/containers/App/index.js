@@ -22,7 +22,7 @@ export default class App extends Component {
     dispatch: PropTypes.func.isRequired,
     forecast: PropTypes.shape({
       data: PropTypes.shape({
-        cod: PropTypes.string,
+        city_name: PropTypes.string,
       }),
     }),
   };
@@ -41,12 +41,12 @@ export default class App extends Component {
 
 
   render() {
-    const { data: {city, list} = {} } = this.props.forecast;
+    const { data: {city_name, data = []} = {} } = this.props.forecast;
 
     return (
       <div className="content">
-        <Header city={city} />
-        <Forecast list={list} />
+        <Header city={city_name} />
+        <Forecast data={data} />
       </div>
     );
   }
