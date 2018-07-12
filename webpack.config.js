@@ -36,6 +36,10 @@ module.exports = {
             name: "assets/fonts/[name].[ext]",
           }
         }
+      },
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'url-loader?limit=8192'
       }
     ]
   },

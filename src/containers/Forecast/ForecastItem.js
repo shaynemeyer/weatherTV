@@ -8,11 +8,11 @@ const ForecastItem = ({ hi, low, date, code, description }) => {
   };
 
   const renderDayOfWeek = () => {
-    const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 
     const d = new Date(date);
 
-    return days[d.getDay() + 1];
+    return days[d.getDay()];
   };
 
   const iconClass = (code) => {

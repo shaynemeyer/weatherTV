@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+.social-media {
+  .social-media__title {
+
+  }
+  .social-media__bar {
+    color: $color-white;
+
+    i {
+      padding: .5rem .5rem;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+}

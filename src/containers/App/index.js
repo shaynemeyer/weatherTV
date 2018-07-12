@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Forecast from '../Forecast';
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 import { fetchForecast } from "../../redux/modules/forecast";
 
@@ -44,12 +45,16 @@ export default class App extends Component {
     const { data: {city_name, data = []} = {} } = this.props.forecast;
 
     return (
-      <div className="content">
-        <div className="header__wrapper">
-          <Header city={city_name} />
-        </div>
+      <div className="wrapper">
+        <div className="content">
+          <div className="header__wrapper">
+            <Header city={city_name} />
+          </div>
 
-        <Forecast data={data} />
+          <Forecast data={data} />
+
+        </div>
+        <Footer />
       </div>
     );
   }
