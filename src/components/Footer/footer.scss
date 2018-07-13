@@ -2,14 +2,23 @@
 
 #footer {
   background-color: $color-dark-gray;
-  height: 20rem;
+  height: 7rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
 
+  @media (min-width: $bp-medium) {
+    height: 20rem;
+  }
+
   & > div {
     margin-top: 2rem;
     padding: 1rem 1rem;
+
+    @media (max-width: $bp-medium) {
+      margin-top: .5rem;
+    }
   }
+
 }

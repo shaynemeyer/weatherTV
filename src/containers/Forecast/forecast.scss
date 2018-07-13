@@ -33,6 +33,9 @@
     align-items: center;
     align-content: center;
 
+    @media (max-width: $bp-medium-large) {
+      margin-bottom: .5rem;
+    }
     & > div {
       padding: 0.3rem 0;
     }

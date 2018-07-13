@@ -3,6 +3,10 @@
 .shot {
   display: none;
 
+  h4 {
+    margin-bottom: 0.5rem;
+  }
+
   @media (min-width: $bp-medium) {
     display: block;
     img {
