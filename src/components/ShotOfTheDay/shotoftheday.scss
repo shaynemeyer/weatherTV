@@ -1,5 +1,12 @@
+@import "../../styles/variables";
+
 .shot {
-  img {
-    height: 15rem;
+  display: none;
+
+  @media (min-width: $bp-medium) {
+    display: block;
+    img {
+      height: 15rem;
+    }
   }
 }
