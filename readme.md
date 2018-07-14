@@ -6,6 +6,8 @@ A fictional cable weather channel web app that I thought about one night while f
 ## Technologies used:
 * [React 16](https://reactjs.org/docs/getting-started.html)
 * [Redux](https://redux.js.org/)
+* [Ducks Pattern](https://medium.freecodecamp.org/scaling-your-redux-app-with-ducks-6115955638be)
+* [Redux Actions](https://redux-actions.js.org/)
 * [Sass](https://sass-lang.com/)
 * [Webpack 4](https://webpack.js.org/concepts/)
 * [Weather Bit api](https://www.weatherbit.io/)
