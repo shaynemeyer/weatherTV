@@ -7,7 +7,6 @@ import Footer from '../../components/Footer';
 
 import { fetchForecast } from "../../redux/modules/forecast";
 
-import "../../styles/main.scss";
 import "./app.scss";
 
 @connect((state) => {
