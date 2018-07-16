@@ -4,7 +4,6 @@ import Clock from '../Clock';
 import './header.scss';
 
 const Header = ({ city }) => {
-
   return (
     <div id="header">
       <span className="header__logo">WeatherTV</span>

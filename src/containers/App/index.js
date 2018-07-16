@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+
+import { fetchForecast } from "../../redux/modules/forecast";
+
 import Forecast from '../../components/Forecast';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-
-import { fetchForecast } from "../../redux/modules/forecast";
 
 import "./app.scss";
 

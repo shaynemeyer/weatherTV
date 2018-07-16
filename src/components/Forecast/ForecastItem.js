@@ -1,8 +1,6 @@
 import React from 'react';
 
 const ForecastItem = ({ hi, low, date, code, description }) => {
-
-
   const renderTemp = (temp) => {
     return Math.floor(temp);
   };
