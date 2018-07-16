@@ -19,9 +19,14 @@ const Forecast = (props) => {
     );
   };
 
+  const renderTitle = () => {
+    const { days = 5 } = props;
+    return `${days} Day Forecast`;
+  };
+
   return (
     <div id="forecast-wrapper">
-      <div className="forecast__title">5 Day Forecast</div>
+      <div className="forecast__title">{renderTitle()}</div>
       {renderItems()}
     </div>
   );

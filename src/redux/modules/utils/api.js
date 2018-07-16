@@ -1,5 +1,4 @@
 import axios from 'axios';
-
 import { globalsFetch } from "./globals";
 
 const {
@@ -42,7 +41,7 @@ export function receiveReducer(state, { payload } = {}) {
 export async function fetchAPI(url, options = {}) {
 
   const response = await  apiAxios(
-    `${url}&units=I&key=${WEATHER_BIT_API_KEY}`,
+    ` ${url}&units=I&key=${WEATHER_BIT_API_KEY}`,
     options,
   );
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import Forecast from '../Forecast';
+import Forecast from '../../components/Forecast';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
@@ -39,7 +39,6 @@ export default class App extends Component {
     dispatch(fetchForecast({ city: 'Everett', days: 5 }))
   }
 
-
   render() {
     const { data: {city_name, data = []} = {} } = this.props.forecast;
 
@@ -51,7 +50,6 @@ export default class App extends Component {
           </div>
 
           <Forecast data={data} />
-
         </div>
         <Footer />
       </div>
