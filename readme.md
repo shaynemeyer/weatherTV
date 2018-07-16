@@ -66,4 +66,7 @@ src/redux (This would be 'ducks' in other implementations)
 
 ## Todos
 * Wire up unit tests using Jest.
+* Template index.html and copy it to dist on build.
+* Prod deployment. How to deal with secrets?
+* Deploy the app to a hosting service like Heroku.
  
